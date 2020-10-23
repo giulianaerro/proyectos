@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif, helvetica;
+    font-size: 20px;
+    background-color: #5B6E5D;
+}
+
+#title{
+    color: black;
+    font-weight: 550;
+}
+
+.fontt {
+    color: black;
+    font-style: oblique;
+    font-weight: 500;
+}
+
+.textt {
+    float: right;
+    padding-top: 50px;
+    padding-right: 22px;
+    text-align: right;
+}
+
+#main {
+    margin: 10px 5px;
+    padding: 30px;
+    border-radius: 5px;
+    background: #B9BAAD;
+}
+
+#img-div {
+    background-color: rgba(255, 255, 235, 0.5);
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+#img-caption {
+    font-size: 18px;
+    margin: -40px 10px 8px 20px;
+}
+
+#image {
+width: 650px;
+height: 450px;
+border-radius: 5px;
+margin: 35px 60px 50px 15px;
+max-width: 100%;
+}
+
+
+#films {
+    text-align: center;
+    padding-top: 60px;
+    font-size: 28px;
+}
+
+.lista {
+    font-size: 22px;
+    font-weight: 20;
+    padding: 60px 0px 0px 60px;
+}
+
+.lista2 {
+    font-size: 22px;
+    font-weight: 20;
+    float: right;
+    padding-top: 40px;
+    padding-right: 80px;
+    text-align: justify;
+}
+.wiki {
+    text-align: center;
+    padding-top: 60px;
+    font-weight: 400;
+    font-style: oblique;
+}
+a {
+    color: #477ca7;
+}
+
+a:visited {
+    color: #74638f;
+}
