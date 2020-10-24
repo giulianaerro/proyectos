@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+body {
+    font-family: 'nunito', sans-serif;
+    color: white;
+    line-height: 30px;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(115deg,rgba(141, 214, 214, 0.8),rgba(199, 240, 240, 0.6)), 
+    url(https://lh3.googleusercontent.com/proxy/Soeiz2KKEwfZXBAUL9jfORMSPqvraHSMhzGiiOQYBtHM_zXlvI3Nr0ayBO_Y9J2jYI_WaNNVrvbziEvfs0Lc4uJkLp6T0OSGlXHWYqtWpAIg3FDv__BtDdugYlEI2nJUTmjeKEqQVL9l);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#title {
+    font-size: 35px;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+#description {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
