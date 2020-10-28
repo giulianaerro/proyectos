@@ -58,6 +58,12 @@ button {
     border: none;
 }
 
+.pgroup {
+    font-size: 1.125rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
 .header {
     padding: 0 0.625rem;
     margin-bottom: 1.875rem;
@@ -109,32 +115,34 @@ form {
 .form-control:focus {
     border-color:black;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(112, 181, 255, 0.25);
 }
 
-.input-radio,
-.input-checkbox {
-  display: inline-block;
-  margin-right: 0.625rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
+.input-radio, .input-checkbox {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 0.750rem;
+    min-width: 0.750rem;
 }
 
 .input-textarea {
-  min-height: 120px;
-  width: 100%;
-  padding: 0.625rem;
-  resize: vertical;
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
 }
 
 .submit-button {
-  display: block;
-  width: 100%;
-  padding: 0.75rem;
-  background: green;
-  color: inherit;
-  border-radius: 2px;
-  cursor: pointer;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: hsl(122, 88%, 29%);
+    color: inherit;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 

@@ -14,12 +14,75 @@
     </header>
 <form id="survey-form">
     <div class="form-group">
-        <label id="name-label" for="name">Name</label>
-            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+        <label for="name" id="name-label">Name</label>
+            <input id="name" type="text" name="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+    <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+            <input id="email" type="email" name="email" class="form-control" placeholder="Enter your Email" required>
     </div>
-
-
-
+    <div class="form-group">
+        <label for="number" id="number-label">Phone Number</label>
+            <input id="number" type="number" min="1" max="9" name="number" class="form-control" placeholder="Enter your phone number" required>
+    </div>
+    <div class="form-group">
+        <p class="pgroup">Gender</p>
+        <label for="famale">
+            <input id="famale" type="radio" name="gender" value="famale" class="input-radio" checked>Famale
+        </label>
+        <label for="male">
+            <input id="male" type="radio" name="gender" value="Male" class="input-radio" checked>Male
+        </label>
+        <label for="other">
+            <input id="other" type="radio" name="gender" value="Other" class="input-radio" checked>Other
+        </label>
+    </div>
+    <div class="form-group">
+        <p class="pgroup">With what specialization should you take turns?</p>
+            <select id="dropdown" name="specialization" class="form-control" required>
+                <option disabled selected value>Select your option</option>
+                <option value="General">General</option>
+                <option value="Dermatology">Dermatology</option>
+                <option value="Ophthalmology">Ophthalmology</option>
+                <option value="Traumatology">Traumatology</option>
+                <option value="Cardiology">Cardiology</option>
+                <option value="Pediatrics">Pediatrics</option>
+            </select>
+    </div>
+    <div class="form-group">
+        <p class="pgroup">have you had any of these symptoms in the last few days?</p>
+        <label for="fever">
+            <input id="fever" type="checkbox" name="symptoms" value="Fever" class=input-checkbox>Fever
+        </label>
+        <label for="cough">
+            <input id="cough" type="checkbox" name="symptoms" value="cough" class="input-checkbox">Cough
+        </label>
+        <label for="Fatigue">
+            <input id="Fatigue" type="checkbox" name="symptoms" value="Fatigue" class="input-checkbox">Fatigue
+        </label>
+        <label for="Loss of sense of smell or taste">
+            <input id="Loss of sense of smell or taste" type="checkbox" name="symptoms" value="Loss of sense of smell or taste" class="input-checkbox">Loss of sense of smell or taste
+        </label>
+        <label for="muscle pains">
+            <input id="muscle pains" type="checkbox" name="symptoms" value="muscle pains" class="input-checkbox">Muscle pain
+        </label>
+        <label for="sore throat">
+            <input id="sore throat" type="checkbox" name="symptoms" value="sore throat" class="input-checkbox">Sore Throat
+        </label>
+        <label for="respiratory distress">
+            <input id="respiratory distress" type="checkbox" name="symptoms" value="respiratory distress" class="input-checkbox">Respiratory Distress
+        </label>
+        <label for="diarrhea and/or vomiting">
+            <input id="diarrhea and/or vomiting" type="checkbox" name="symptoms" value="diarrhea and/or vomiting" class="input-checkbox">Diarrhea and/or Vomiting
+        </label>
+    </div>
+    <div class="form-group">
+        <p class="pgroup">Any comments?</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+    </div>
+    <div class="form-group">
+        <button id="submit" type="submit" class="submit-button">Submit</buttom>
+    </div>
 </form>
 </div>
 </body>
