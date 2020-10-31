@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>HTML5 Layout Elements</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Header">&ltHeader&gt</a></li>
+            <li><a class="nav-link" href="#Nav">&ltNav&gt</a></li>
+            <li><a class="nav-link" href="#Main">&ltMain&gt</a></li>
+            <li><a class="nav-link" href="#Aside">&ltAside&gt</a></li>
+            <li><a class="nav-link" href="#Section">&ltSection&gt</a></li>
+            <li><a class="nav-link" href="#Article">&ltArticle&gt</a></li>
+            <li><a class="nav-link" href="#Footer">&ltFooter&gt</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <article><p>Page layout is the part of graphic design that deals with the arrangement of visual elements 
+                on a page. Page layout is used to make the web pages look better. It establishes the overall 
+                appearance, relative importance, and relationships between the graphic elements to achieve a smooth 
+                flow of information and eye movement for maximum effectiveness or impact.</p>
+                <p>In addition to defining individual parts of your page (such as "a paragraph" or "an image"), HTML 
+                also boasts a number of block level elements used to define areas of your website (such as 
+                "the header", "the navigation menu", "the main content column").</p></article>
+        </section>
+
+    <section class="main-section" id="Header">
+        <header>&ltHeader&gt</header>
+        <article><p>The HTML header element represents introductory content, typically a group of introductory or 
+            navigational aids. It may contain some heading elements but also a logo, a search form, an author name, 
+            and other elements</p></article>
+                <ul>
+                    <li>Authors should not confuse the header and head elements. While the head element provides 
+                        metadata for the document, the header contains a group of introductory or navigational 
+                        elements.</li>
+                    <li>When a header element is declared within a sectioning element (such as article or section) 
+                        it represents a heading in the scope of that element. Otherwise (when it belongs to the body 
+                        element) it represents a header for the entire document.</li>
+                </ul>
+            <code>&lt<span style="color:rgb(255, 0, 85)">header</span>&gt
+    &lt<span style="color:rgb(255, 0, 85)">h1</span>&gtMain Page Title&lt<span style="color:rgb(255, 0, 85)">/h1</span>&gt
+    &lt<span style="color:rgb(255, 0, 85)">img</span> <span style="color:rgb(46, 165, 22)">src</span>="<span style="color:rgb(7, 131, 231)">mdn-logo-sm.png</span>" <span style="color:rgb(46, 165, 22)">alt</span>="<span style="color:rgb(7, 131, 231)">MDN logo</span>"&gt
+&lt<span style="color:rgb(255, 0, 85)">/header</span>&gt</code>
+    </section>
+
+    <section class="main-section" id="Nav">
+        <header>&ltNav&gt</header>
+        <article><p>The HTML nav element represents a section of a page whose purpose is to provide navigation 
+            links, either within the current document or to other documents. Common examples of navigation sections 
+            are menus, tables of contents, and indexes.</p>
+            <p>The nav element is a container for navigation links, which is supposed to provide ways to access 
+                sections of the website, as well as external documents. Links within this element are assumed to 
+                correspond to one main navigation block only.</p></article>
+                <ul>
+                    <li>The nav element can be a good way to improve the accessibility of a website. Some browsers, 
+                        such as voice browsers, may provide the information within this element upon request, or ignore 
+                        it when searching for main content.</li>
+                </ul>
+            <code>&lt<span style="color:rgb(255, 0, 85)">nav</span> <span style="color: rgb(46, 165, 22)">class</span>="<span style="color:rgb(7, 131, 231)">menu</span>"&gt
+    &lt<span style="color:rgb(255, 0, 85)">ul</span>&gt
+        &lt<span style="color:rgb(255, 0, 85)">li</span>&gt&lt<span style="color:rgb(255, 0, 85)">a</span> <span style="color:rgb(46, 165, 22)">href</span>="<span style="color:rgb(7, 131, 231)">#</span>"&gtIntroduction&lt<span style="color:rgb(255, 0, 85)">/a</span>&gt&lt<span style="color:rgb(255, 0, 85)">/li</span>&gt
+        &lt<span style="color:rgb(255, 0, 85)">li</span>&gt&lt<span style="color:rgb(255, 0, 85)">a</span> <span style="color:rgb(46, 165, 22)">href</span>="<span style="color:rgb(7, 131, 231)">#</span>"&gtAbout Us&lt<span style="color:rgb(255, 0, 85)">/a</span>&gt&lt<span style="color:rgb(255, 0, 85)">/li</span>&gt
+        &lt<span style="color:rgb(255, 0, 85)">li</span>&gt&lt<span style="color:rgb(255, 0, 85)">a</span> <span style="color:rgb(46, 165, 22)">href</span>="<span style="color:rgb(7, 131, 231)">#</span>"&gtContact&lt<span style="color:rgb(255, 0, 85)">/a</span>&gt&lt<span style="color:rgb(255, 0, 85)">/li</span>&gt
+    &lt<span style="color:rgb(255, 0, 85)">ul</span>&gt
+&lt<span style="color:rgb(255, 0, 85)">/nav</span>&gt</code>
+    </section>
+
+    <section class="main-section" id="Main">
+        <header>&ltMain&gt</header>
+        <article><p>The HTML main element represents the dominant content of the body of a document. The main 
+            content area consists of content that is directly related to or expands upon the central topic of a 
+            document, or the central functionality of an application.<br>Although there are no restrictions on the number of main elements in a document, only one can be 
+                visible at a time.</p></article>
+        <code>&lt<span style="color:rgb(255, 0, 85)">main</span>&gt
+    &lt<span style="color:rgb(255, 0, 85)">h1</span>&gtFree Software&lt<span style="color:rgb(255, 0, 85)">/h1</span>&gt
+    &lt<span style="color:rgb(255, 0, 85)">p</span>&gt...&lt<span style="color:rgb(255, 0, 85)">/p</span>&gt
+&lt<span style="color:rgb(255, 0, 85)">/main</span>&gt</code>
+    </section>
+    
+    <section class="main-section" id="Aside">
+        <header>&ltAside&gt</header>
+        <article><p>The HTML aside element represents a portion of a document whose content is only indirectly 
+            related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.</p>
+        <p>The aside element can typically be found around blog roll links, links to the archive, a glossary, a list 
+            of the author's tweets, or notes, thoughts, or ideas that the author came up with during the production of 
+            the document. Also, you can see perfect examples of margin notes in magazines and print newspapers, where 
+            additional (but not critical) information is provided to enrich the user experience.</p></article>
+            <ul>
+                <li>Authors should not use the aside element to enclose content that is unrelated to the section in 
+                    which it is defined. Its content must have some relation to its surroundings.</li>
+            </ul>
+        <code>&lt<span style="color:rgb(255, 0, 85)">aside</span>&gt
+    &lt<span style="color:rgb(255, 0, 85)">p</span>&gt...&lt<span style="color:rgb(255, 0, 85)">/p</span>&gt
+&lt<span style="color:rgb(255, 0, 85)">/aside</span>&gt</code>
+    </section>
+
+    <section class="main-section" id="Section">
+        <header>&ltSection&gt</header>
+        <article><p>The HTML section element represents a standalone section which doesn't have a more specific 
+            semantic element to represent it contained within an HTML document. Typically, but not always, sections 
+            have a heading.<br>Authors usually use the section element to divide a long document into chapters, to 
+            separate the different tabs in an application, or to thematically divide the sections of a document 
+            (announcements section, latest published articles section, related links section, etc).</p></article>
+            <ul>
+                <li>The section element is intended to thematically group a set of elements. If there is a 
+                    need to define a block for programming or stylistic purposes only, the div element should be 
+                    used instead.</li>
+            </ul>
+        <code>&lt<span style="color:rgb(255, 0, 85)">section</span>&gt
+    &lt<span style="color:rgb(255, 0, 85)">h2</span>&gtIntroduction&lt<span style="color:rgb(255, 0, 85)">/h2</span>&gt
+    &lt<span style="color:rgb(255, 0, 85)">p</span>&gt...&lt<span style="color:rgb(255, 0, 85)">/p</span>&gt
+&lt<span style="color:rgb(255, 0, 85)">/section</span>&gt</code>
+    </section>
+
+    <section class="main-section" id="Article">
+        <header>&ltArticle&gt</header>
+        <article><p>The HTML article element represents a self-contained composition in a document, page, 
+            application, or site, which is intended to be independently distributable or reusable (e.g., in 
+            syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry, a 
+            product card, a user-submitted comment, an interactive widget or gadget, or any other independent item 
+            of content.<br>A given document can have multiple articles in it; for example, on a blog that shows the 
+            text of each article one after another as the reader scrolls, each post would be contained in an article 
+            element, possibly with one or more sections within.</p></article>
+            <ul>
+                <li>You should not confuse the article and section elements. The article element has a greater 
+                    meaning and implies that its contents can be treated independently of the document that contains 
+                    them.</li>
+            </ul>
+        <code>&lt<span style="color:rgb(255, 0, 85)">article</span>&gt
+    &lt<span style="color:rgb(255, 0, 85)">h1</span>&gtInternational Organization for Standardization&lt<span style="color:rgb(255, 0, 85)">/h1</span>&gt
+    &lt<span style="color:rgb(255, 0, 85)">p</span>&gt...&lt<span style="color:rgb(255, 0, 85)">/p</span>&gt
+    &lt<span style="color:rgb(255, 0, 85)">p</span>&gt...&lt<span style="color:rgb(255, 0, 85)">/p</span>&gt
+&lt<span style="color:rgb(255, 0, 85)">/article</span>&gt</code>
+    </section>
+
+    <section class="main-section" id="Footer">
+        <header>Footer</header>
+        <article><p>The HTML footer element represents a footer for its nearest sectioning content or sectioning 
+            root element. A footer typically contains information about the author of the section, copyright data 
+            or links to related documents.</p></article>
+            <ul>
+                <li>Although it is common practice to place your footers at the bottom of the page or section, 
+                    they do not need to be there. A foot is a foot because of what it represents, not because of 
+                    its location.</li>
+                <li>The contact information about the author of a document or article corresponds within the address 
+                    element which could be included, in turn, within a footer element.</li>
+            </ul>
+        <code>&lt<span style="color:rgb(255, 0, 85)">footer</span>&gt
+    &lt<span style="color:rgb(255, 0, 85)">adress</span>&gtJhonny Doe&lt<span style="color:rgb(255, 0, 85)">br</span>&gt
+        jhonnydoe5468@mypc.com&lt<span style="color:rgb(255, 0, 85)">/adress</span>&gt        
+    &lt<span style="color:rgb(255, 0, 85)">ul</span>&gt
+        &lt<span style="color:rgb(255, 0, 85)">li</span>&gt&lt<span style="color:rgb(255, 0, 85)">a</span> <span style="color:rgb(46, 165, 22)">href</span>="<span style="color:rgb(7, 131, 231)">/</span>"&gtHome&lt<span style="color:rgb(255, 0, 85)">/a</span>&gt&lt<span style="color:rgb(255, 0, 85)">/li</span>&gt
+        &lt<span style="color:rgb(255, 0, 85)">li</span>&gt&lt<span style="color:rgb(255, 0, 85)">a</span> <span style="color:rgb(46, 165, 22)">href</span>="<span style="color:rgb(7, 131, 231)">/food</span>"&gtFood&lt<span style="color:rgb(255, 0, 85)">/a</span>&gt&lt<span style="color:rgb(255, 0, 85)">/li</span>&gt
+        &lt<span style="color:rgb(255, 0, 85)">li</span>&gt&lt<span style="color:rgb(255, 0, 85)">a</span> <span style="color:rgb(46, 165, 22)">href</span>="<span style="color:rgb(7, 131, 231)">/drinks</span>"&gtDrinks&lt<span style="color:rgb(255, 0, 85)">/a</span>&gt&lt<span style="color:rgb(255, 0, 85)">/li</span>&gt
+    &lt<span style="color:rgb(255, 0, 85)">ul</span>&gt
+&lt<span style="color:rgb(255, 0, 85)">/footer</span>&gt</code>
+    </section>
+</main>
+</body>
+</html>
