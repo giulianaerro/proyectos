@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap'); 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: transparent;
+    font-family: "space-grotesk";
+  }
+
+#page-wrapper {
+  display: flex;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 90px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  width: 60vw;
+ }
+
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+nav {
+  font-weight: 700;
+  font-size: 22px;
+}
+.back {
+  filter: opacity(50%);
+  background-image: url(https://wallpaperaccess.com/full/1107999.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100%;
+
+}
+nav > ul {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#info {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+background-color: tomato;
+margin: 30px 300px 30px 300px;
+}
+
+#our-work {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#pricing {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+display: flex;
+width: 80px;
+height: 80px;
+background-color: teal;
+margin: 10px;
+justify-content: center;
+align-items: center;
+}
+
+.icon {
+display: flex;
+font-size: 70px;
+}
