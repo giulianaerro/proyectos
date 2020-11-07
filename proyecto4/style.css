@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -8,7 +8,7 @@
 
 body {
     background-color: transparent;
-    font-family: "space-grotesk";
+    font-family: "space grotesk";
   }
 
 #page-wrapper {
@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   min-height: 90px;
   padding: 0px;
@@ -30,7 +30,7 @@ li {
 }
 
 a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -51,11 +51,11 @@ a {
 
 nav {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 22px;;
 }
 .back {
-  filter: opacity(50%);
-  background-image: url(https://wallpaperaccess.com/full/1107999.jpg);
+  filter: opacity(75%);
+  background-image: url(/img/back.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: 100% 100%;
@@ -64,7 +64,8 @@ nav {
 
 }
 nav > ul {
-  width: 700px;
+  max-width: 600px;
+  width: 550px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -73,10 +74,12 @@ nav > ul {
 #info {
   margin-top: 30px;
   display: flex;
+  width: 1000px;
   flex-direction: row;
+  text-align: center;
   justify-content: space-between;
-background-color: tomato;
-margin: 30px 300px 30px 300px;
+  padding: 0px 20px 200px 20px;
+margin: 20px auto 20px auto;
 }
 
 #our-work {
@@ -95,8 +98,7 @@ margin: 30px 300px 30px 300px;
 display: flex;
 width: 80px;
 height: 80px;
-background-color: teal;
-margin: 10px;
+margin: 20px 55px 20px 55px;
 justify-content: center;
 align-items: center;
 }
@@ -104,4 +106,25 @@ align-items: center;
 .icon {
 display: flex;
 font-size: 70px;
+color: rgb(49, 49, 146);
+padding-top: 60px;
 }
+
+.title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 200px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.text {
+  display: flex;
+  justify-content: center; 
+  text-align: center;
+width: 200px;
+font-size: 17px;
+}
+
