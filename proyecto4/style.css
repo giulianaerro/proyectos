@@ -78,17 +78,11 @@ nav > ul {
   flex-direction: row;
   text-align: center;
   justify-content: space-between;
-  padding: 0px 20px 200px 20px;
+  padding: 0px 20px 80px 20px;
 margin: 20px auto 20px auto;
 }
 
 #our-work {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-}
-
-#pricing {
   margin-top: 30px;
   display: flex;
   justify-content: center;
@@ -128,3 +122,144 @@ width: 200px;
 font-size: 17px;
 }
 
+#video {
+margin: 50px auto 100px auto;
+height: 450px;
+width: 700px;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 250px;
+  background-color:rgb(231, 231, 252);
+}
+
+#information > h2 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+#information input[type='email'] {
+  max-width: 275px;
+  width: 100%;
+  padding: 8px;
+margin-top: 12px;
+margin-bottom: auto;
+}
+
+#information input[type='submit'] {
+  color: white;
+  max-width: 200px;
+  width: 100%;
+  width: 135px;
+  height: 35px;
+  margin-top: 20px;
+  border: 0;
+  background-color: rgb(49, 49, 146);
+}
+
+#information input[type='submit']:hover {
+  background-color: rgb(11, 11, 83);
+  transition: background-color 1s;
+}
+
+.btn {
+  padding: auto;
+  text-align: center;
+  justify-content: center;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 500;
+  border: 3px black;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1000px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 40px;
+  border: 3px solid rgb(49, 49, 146);
+  border-radius: 5px;
+}
+
+.product > .level {
+  background-color: rgb(231, 231, 252);
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  color: white;
+  margin: 15px 0;
+  background-color: rgb(49, 49, 146);
+  font-weight: 400;
+  width: 90px;
+}
+
+.product > button:hover {
+  background-color: rgb(11, 11, 83);
+  transition: background-color 1s;
+}
+
+footer {
+  background-color: rgb(186, 186, 233);
+  padding: 30px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: black;
+}
